@@ -1,4 +1,15 @@
-# Python Wrapper for the Lexoffice Public API
-This library is a wrapper around the official public API of Lexoffice.
-Currently only the upload of invoices is supported as I need this for an automation but maybe I will add other functionality of the API.
-If you're interested in that or need other parts of the API, feel free to open an issue or create a pull request
+# Lexoffice Python API
+
+This repository contains a Python library for interacting with the lexoffice API. It enables the automation of tasks and the integration of lexoffice into your own Python projects.
+
+## Current range of functions
+Currently this library only supports uploading invoices as this was required for a specific project. More features may be added in future updates.
+
+## How to use
+To upload an invoice, use the upload_invoice function in the api.py file.
+
+## Contribute
+Contributions are always welcome. If you would like to add features that are not currently supported, please do not hesitate to create a pull request.
+
+## License
+This project is licensed under the license specified in the LICENSE file.
