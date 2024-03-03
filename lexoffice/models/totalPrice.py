@@ -3,4 +3,4 @@ class TotalPrice:
         self.currency = currency
 
     def to_dict(self):
-        return {"currency": self.currency}
+        return {key: value for key, value in self.__dict__.items() if value is not None}

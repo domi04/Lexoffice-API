@@ -23,12 +23,4 @@ class Address:
         self.countryCode = countryCode
 
     def to_dict(self):
-        return {
-            "contactId": self.contactId,
-            "name": self.name,
-            "supplement": self.supplement,
-            "street": self.street,
-            "city": self.city,
-            "zip": self.zip,
-            "countryCode": self.countryCode,
-        }
+        return {key: value for key, value in self.__dict__.items() if value is not None}

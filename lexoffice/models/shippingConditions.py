@@ -13,8 +13,4 @@ class ShippingConditions:
         self.shippingEndDate = shippingEndDate
 
     def to_dict(self):
-        return {
-            "shippingType": self.shippingType,
-            "shippingDate": self.shippingDate,
-            "shippingEndDate": self.shippingEndDate,
-        }
+        return {key: value for key, value in self.__dict__.items() if value is not None}
